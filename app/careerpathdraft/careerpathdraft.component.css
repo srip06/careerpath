@@ -1,0 +1,26 @@
+table {
+    width: 1200px;
+    height: 800px;
+    border-collapse: separate;
+    border-spacing: 25px;
+}
+
+table td, table th{
+    border: none;
+}
+
+table td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.colHeader{
+    width: 100px;
+    height: 70px;
+}
+
+.rowHeader{
+    width:100px;
+    height: 100px;
+}

@@ -1,0 +1,22 @@
+<h2><strong>Lattice Title: {{ latticeName }}</strong></h2>
+
+<table class="table table-borderless">
+  <tr>
+    <th></th>
+    <th *ngFor = "let ld of latticeDepartment" class="colHeader">
+      {{ ld.DepartmentName + ' (' + ld.DepartmentID + ')'}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let lt of latticeTitle">
+    <th class="rowHeader">{{ lt.TitleName + ' (' + lt.TitleID + ')' }}</th>
+    <td *ngFor="let ld of latticeDepartment">
+      <div *ngFor="let b of latticeBox">
+          <app-box [boxID]="b.BoxID" *ngIf="b.DepartmentID==ld.DepartmentID && b.TitleID == lt.TitleID"></app-box>
+          <!-- iterate through links -->
+      </div>
+      
+    </td>
+  </tr>
+</table>
+<app-link></app-link>

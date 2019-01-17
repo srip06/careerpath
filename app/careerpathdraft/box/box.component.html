@@ -1,0 +1,10 @@
+<div class="box" [id]="boxID">
+  <!-- {{ boxID }} -->
+  <div *ngIf="positions">
+    <div *ngFor="let p of arrayOfPositions">
+     <app-position [positionID]="p"></app-position>
+
+    </div>
+  </div>
+</div>
+

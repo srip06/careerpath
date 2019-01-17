@@ -1,0 +1,29 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">{{title}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <h2 class="pull-middle"><strong>{{body}}</strong></h2>
+    <h3>Grades</h3>
+    <h4 *ngFor="let g of arrayOfGrades">
+        {{ g.Grade }}
+    </h4>
+    <br/>
+    <h3>SkillSets</h3>
+    <h4 *ngFor="let s of arrayOfSegments">
+        {{ s.SegmentName }}
+    </h4>
+    <!-- <form>
+        <div class="form-group row">
+            <label for="test1" class="col-2 col-form-label">Grade</label>
+            <input class="form-control col-10" type="text" [value]="name" id="test1" [(ngModel)]="name" name="name">
+            {{ name}}
+            <button type="submit" class="pull-right btn-default" (click)="saveDetails()" >Save</button>
+        </div>
+    </form> -->
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

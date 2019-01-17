@@ -1,0 +1,13 @@
+.position{
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 6px;
+    width: fit-content;
+    background-color: rgb(212, 197, 226);
+}
+
+.position:hover{
+    cursor: pointer;
+}
