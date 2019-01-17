@@ -1,0 +1,11 @@
+<div class="container">
+
+    <h1>Hello {{ userSession.preferredName }} {{ userSession.lastName }}</h1>
+	<div *ngIf="permission">
+		<p>You have permission.</p>
+	</div>
+	<div *ngIf="!permission">
+		<p>You do not have permission.</p>
+	</div>
+
+</div>

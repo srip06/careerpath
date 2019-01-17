@@ -1,0 +1,32 @@
+/* 
+#a, #b {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  height: 20px;
+  left: 100px;
+}
+#a {
+  background-color: blue;
+  top: 20px;
+}
+#b {
+  background-color: red;
+  bottom: 20px;
+} */
+
+svg:text {
+  border: 1px solid black;
+  border-radius: 10px;
+  color: green;
+}
+.outsidesvg {
+  position: fixed;
+}
+
+path{
+  stroke: red;
+  stroke-width: 5;
+  fill: red;
+}

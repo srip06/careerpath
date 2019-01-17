@@ -1,0 +1,30 @@
+.rowHeader{
+    transform: rotate(270deg);
+    text-align: center;
+}
+table{
+   border-collapse: separate;
+   border-spacing: 50px;
+}
+table th{
+    text-align: center;
+    padding: 5px;
+}
+table th, table td{
+   border: none;
+
+}
+
+.pathTable{
+    position: fixed;
+    width: 500px;
+    height: 500px;
+
+}
+
+path{
+    stroke:rgb(7, 68, 7);
+    stroke-width: 1;
+    fill: rgb(7, 68, 7);
+  }
+  

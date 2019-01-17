@@ -1,0 +1,10 @@
+p{
+    border: 1px solid greenyellow;
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+
+p:hover{
+    cursor: pointer;
+}
